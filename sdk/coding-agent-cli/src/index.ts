@@ -35,8 +35,8 @@ async function main() {
   }
 
   if (!apiKey.startsWith("crsr_")) {
-    throw new Error(
-      "Invalid Cursor API key format. Keys must start with 'crsr_'. Please check your CURSOR_API_KEY."
+     console.warn(
+      "Warning: CURSOR_API_KEY has an unexpected format. Authentication may fail."
     )
   }
 
